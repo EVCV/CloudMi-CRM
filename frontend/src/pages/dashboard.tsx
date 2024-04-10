@@ -1,4 +1,4 @@
-import { mdiChartTimelineVariant, mdiInformation, mdiLoading } from '@mdi/js';
+import * as icon from '@mdi/js';
 import Head from 'next/head';
 import React from 'react';
 import axios from 'axios';
@@ -116,7 +116,7 @@ const Dashboard = () => {
       </Head>
       <SectionMain>
         <SectionTitleLineWithButton
-          icon={mdiChartTimelineVariant}
+          icon={icon.mdiChartTimelineVariant}
           title='Overview'
           main
         >
@@ -146,7 +146,7 @@ const Dashboard = () => {
                 w='w-16'
                 h='h-16'
                 size={48}
-                path={mdiLoading}
+                path={icon.mdiLoading}
               />{' '}
               Loading...
             </div>
@@ -185,7 +185,9 @@ const Dashboard = () => {
                       w='w-16'
                       h='h-16'
                       size={48}
-                      path={mdiInformation}
+                      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                      // @ts-ignore
+                      path={icon.mdiAccountGroup || icon.mdiTable}
                     />
                   </div>
                 </div>
@@ -211,7 +213,9 @@ const Dashboard = () => {
                       w='w-16'
                       h='h-16'
                       size={48}
-                      path={mdiInformation}
+                      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                      // @ts-ignore
+                      path={icon.mdiTable || icon.mdiTable}
                     />
                   </div>
                 </div>
@@ -237,7 +241,9 @@ const Dashboard = () => {
                       w='w-16'
                       h='h-16'
                       size={48}
-                      path={mdiInformation}
+                      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                      // @ts-ignore
+                      path={icon.mdiTable || icon.mdiTable}
                     />
                   </div>
                 </div>
@@ -263,7 +269,9 @@ const Dashboard = () => {
                       w='w-16'
                       h='h-16'
                       size={48}
-                      path={mdiInformation}
+                      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                      // @ts-ignore
+                      path={icon.mdiTable || icon.mdiTable}
                     />
                   </div>
                 </div>
@@ -289,7 +297,9 @@ const Dashboard = () => {
                       w='w-16'
                       h='h-16'
                       size={48}
-                      path={mdiInformation}
+                      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                      // @ts-ignore
+                      path={icon.mdiTable || icon.mdiTable}
                     />
                   </div>
                 </div>
@@ -315,7 +325,9 @@ const Dashboard = () => {
                       w='w-16'
                       h='h-16'
                       size={48}
-                      path={mdiInformation}
+                      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                      // @ts-ignore
+                      path={icon.mdiTable || icon.mdiTable}
                     />
                   </div>
                 </div>
@@ -341,7 +353,9 @@ const Dashboard = () => {
                       w='w-16'
                       h='h-16'
                       size={48}
-                      path={mdiInformation}
+                      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                      // @ts-ignore
+                      path={icon.mdiTable || icon.mdiTable}
                     />
                   </div>
                 </div>
@@ -367,7 +381,11 @@ const Dashboard = () => {
                       w='w-16'
                       h='h-16'
                       size={48}
-                      path={mdiInformation}
+                      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                      // @ts-ignore
+                      path={
+                        icon.mdiShieldAccountVariantOutline || icon.mdiTable
+                      }
                     />
                   </div>
                 </div>
@@ -393,7 +411,9 @@ const Dashboard = () => {
                       w='w-16'
                       h='h-16'
                       size={48}
-                      path={mdiInformation}
+                      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                      // @ts-ignore
+                      path={icon.mdiShieldAccountOutline || icon.mdiTable}
                     />
                   </div>
                 </div>
@@ -419,7 +439,9 @@ const Dashboard = () => {
                       w='w-16'
                       h='h-16'
                       size={48}
-                      path={mdiInformation}
+                      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                      // @ts-ignore
+                      path={icon.mdiTable || icon.mdiTable}
                     />
                   </div>
                 </div>
